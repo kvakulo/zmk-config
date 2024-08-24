@@ -1,3 +1,5 @@
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/unicode-chars/danish.dtsi"
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
