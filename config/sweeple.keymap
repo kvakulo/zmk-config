@@ -10,11 +10,6 @@
 / {
     input_configs {
         compatible = "zmk,input-configs";
-
-        mmv {
-            device = <&mmv>;
-            scale-multiplier = <10>;
-        };
     };
 
     behaviors {
