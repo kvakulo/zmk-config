@@ -119,6 +119,20 @@
             #binding-cells = <0>;
             bindings = <&kp LC(V)>;
         };
+
+        ccirc: ccirc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "CCIRC";
+        };
     };
 
     combos {
@@ -175,10 +189,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W  &kp E  &kp R        &kp T      &kp Y     &kp U            &kp I      &kp O       &kp P
-&mt LEFT_SHIFT A  &kp S  &kp D  &kp F        &kp G      &kp H     &kp J            &kp K      &kp L       &kp RIGHT_SHIFT
-&mt LCTRL Z       &kp X  &kp C  &kp V        &kp B      &kp N     &kp M            &kp COMMA  &kp PERIOD  &mt RCTRL ENTER
-                                &lt 5 SPACE  &lt 4 ESC  &htl 3 1  &lt 0 BACKSPACE
+&kp Q             &kp W  &kp E        &kp R        &kp T      &kp Y     &kp U            &kp I      &kp O       &kp P
+&mt LEFT_SHIFT A  &kp S  &kp D        &kp F        &kp G      &kp H     &kp J            &kp K      &kp L       &kp RIGHT_SHIFT
+&mt LCTRL Z       &kp X  &mt RA(C) C  &kp V        &kp B      &kp N     &kp M            &kp COMMA  &kp PERIOD  &mt RCTRL ENTER
+                                      &lt 5 SPACE  &lt 4 ESC  &htl 3 1  &lt 0 BACKSPACE
             >;
 
             label = "Default";
