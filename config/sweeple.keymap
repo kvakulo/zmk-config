@@ -203,7 +203,7 @@
 &trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR     &trans     &trans     &kp NUBS       &kp UNDER   &kp MINUS  &trans
 &btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT  &kp ASTRK  &kp FSLH       &kp CARET   &kp AMPS   &kp PIPE
 &sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans     &trans     &kp RA(N7)     &kp RA(N8)  &tilde     &sk RIGHT_ALT
-                                     &skq LSHIFT  &skq LGUI  &sl 2      &kp BACKSPACE
+                                     &skq LSHIFT  &kp LGUI   &sl 2      &kp BACKSPACE
             >;
 
             label = "Symbol 1";
