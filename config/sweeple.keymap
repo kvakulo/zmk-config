@@ -82,6 +82,24 @@
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp LEFT_BRACKET>;
         };
+
+        kp_mo: kp_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KP_MO";
+            bindings = <&kp>, <&mo>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <0>;
+        };
+
+        hold_no_tap: hold_no_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_NO_TAP";
+            bindings = <&kp>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     macros {
@@ -221,7 +239,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W           &kp E           &kp R        &kp T      &kp Y     &kp U            &kp I                &kp O                 &kp P
-&mt LEFT_SHIFT A  &kp S           &kp D           &kp F        &kp G      &kp H     &kp J            &kp K                &kp L                 &htl 0 6
+&mt LEFT_SHIFT A  &kp S           &kp D           &kp F        &kp G      &kp H     &kp J            &kp K                &kp L                 &kp RIGHT_SHIFT
 &mt LCTRL Z       &mt LEFT_WIN X  &mt LEFT_ALT C  &kp V        &kp B      &kp N     &kp M            &mt RIGHT_ALT COMMA  &mt RIGHT_WIN PERIOD  &mt RCTRL ENTER
                                                   &lt 5 SPACE  &lt 4 ESC  &htl 3 1  &lt 0 BACKSPACE
             >;
@@ -287,7 +305,7 @@
         alt_tab {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LS(TAB)  &kp TAB  &trans  &lm 6 LEFT_ALT
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LS(TAB)  &kp TAB  &trans  &kp RA(TAB)
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans   &trans  &trans
                         &trans  &trans  &trans  &trans
             >;
