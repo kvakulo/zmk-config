@@ -189,7 +189,7 @@
 
         combo_aa {
             timeout-ms = <30>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
             layers = <0>;
             bindings = <&kp LBKT>;
         };
@@ -201,25 +201,11 @@
             bindings = <&kp SEMI>;
         };
 
-        combo_ao {
+        combo_oe {
             timeout-ms = <30>;
-            key-positions = <27 28>;
+            key-positions = <17 18>;
             layers = <0>;
             bindings = <&kp SQT>;
-        };
-
-        combo_x {
-            timeout-ms = <30>;
-            key-positions = <11 12>;
-            layers = <0>;
-            bindings = <&kp X>;
-        };
-
-        combo_q {
-            timeout-ms = <30>;
-            key-positions = <21 22>;
-            layers = <0>;
-            bindings = <&kp Q>;
         };
 
         Bootloader-Left {
