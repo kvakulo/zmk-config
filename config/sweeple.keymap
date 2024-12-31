@@ -59,48 +59,6 @@
             ignore-modifiers;
         };
 
-        EAE_behavior: EAE_behavior {
-            compatible = "zmk,behavior-tap-dance";
-            label = "EAE_BEHAVIOR";
-            #binding-cells = <0>;
-            tapping-term-ms = <500>;
-            bindings = <&kp E>, <&kp SEMICOLON>;
-        };
-
-        OOE_behavior: OOE_behavior {
-            compatible = "zmk,behavior-tap-dance";
-            label = "OOE_BEHAVIOR";
-            #binding-cells = <0>;
-            bindings = <&kp O>, <&kp SQT>;
-
-            tapping-term-ms = <500>;
-        };
-
-        SAA_behavior: SAA_behavior {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SAA_BEHAVIOR";
-            #binding-cells = <0>;
-            bindings = <&kp S>, <&kp LEFT_BRACKET>;
-        };
-
-        kp_mo: kp_mo {
-            compatible = "zmk,behavior-hold-tap";
-            label = "KP_MO";
-            bindings = <&kp>, <&mo>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <0>;
-        };
-
-        hold_no_tap: hold_no_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_NO_TAP";
-            bindings = <&kp>, <&none>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow_mods_left";
@@ -250,10 +208,10 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W            &kp E              &kp R                &kp T      &kp Y     &kp U                 &kp I               &kp O             &kp P
-&hml LEFT_WIN A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LEFT_CONTROL F  &kp G      &kp H     &hmr RIGHT_CONTROL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_WIN BACKSPACE
-&kp Z            &kp X            &kp C              &kp V                &kp B      &kp N     &kp M                 &kp COMMA           &kp DOT           &kp ENTER
-                                                     &lt 5 SPACE          &lt 4 ESC  &htl 3 1  &lt 0 BACKSPACE
+&kp Q  &kp W            &kp E              &kp R                &kp T      &kp Y     &kp U                 &kp I               &kp O            &kp P
+&kp A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LEFT_CONTROL F  &kp G      &kp H     &hmr RIGHT_CONTROL J  &hmr RIGHT_SHIFT K  &hmr LEFT_ALT L  &kp BACKSPACE
+&kp Z  &kp X            &kp C              &kp V                &kp B      &kp N     &kp M                 &kp COMMA           &kp DOT          &kp ENTER
+                                           &lt 5 SPACE          &lt 4 ESC  &htl 3 1  &lt 0 BACKSPACE
             >;
 
             label = "Default";
