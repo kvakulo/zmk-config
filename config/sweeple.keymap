@@ -201,6 +201,11 @@
             bindings = <&bootloader>;
             key-positions = <5 9>;
         };
+
+        combo_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <10 19>;
+        };
     };
 
     keymap {
