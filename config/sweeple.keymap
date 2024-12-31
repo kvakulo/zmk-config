@@ -211,7 +211,7 @@
 &kp Q             &kp W            &kp E              &kp R                &kp T      &kp Y     &kp U                 &kp I               &kp O            &kp P
 &hml RIGHT_ALT A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LEFT_CONTROL F  &kp G      &kp H     &hmr RIGHT_CONTROL J  &hmr RIGHT_SHIFT K  &hmr LEFT_ALT L  &hmr RIGHT_ALT BACKSPACE
 &kp Z             &kp X            &kp C              &kp V                &kp B      &kp N     &kp M                 &kp COMMA           &kp DOT          &kp ENTER
-                                                      &lt 5 SPACE          &lt 4 ESC  &htl 3 1  &lt 0 BACKSPACE
+                                                      &lt 5 SPACE          &lt 4 ESC  &htl 3 1  &none
             >;
 
             label = "Default";
@@ -219,10 +219,10 @@
 
         symbol_1_layer {
             bindings = <
-&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR     &trans     &trans     &kp NUBS       &kp UNDER   &kp MINUS  &trans
-&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT  &kp ASTRK  &kp FSLH       &kp CARET   &kp AMPS   &kp PIPE
-&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans     &trans     &kp RA(N7)     &kp RA(N8)  &tilde     &sk RIGHT_ALT
-                                     &skq LSHIFT  &kp LGUI   &sl 2      &kp BACKSPACE
+&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR     &trans     &trans     &kp NUBS    &kp UNDER   &kp MINUS  &trans
+&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT  &kp ASTRK  &kp FSLH    &kp CARET   &kp AMPS   &kp PIPE
+&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans     &trans     &kp RA(N7)  &kp RA(N8)  &tilde     &sk RIGHT_ALT
+                                     &skq LSHIFT  &kp LGUI   &sl 2      &trans
             >;
 
             label = "Symbol 1";
@@ -242,7 +242,7 @@
         number_navigation_layer {
             bindings = <
 &trans          &kp N1  &kp N2  &kp N3  &trans  &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &kp PRINTSCREEN
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
 &kp LCTRL       &kp N7  &kp N8  &kp N9  &trans  &kp HOME        &trans          &trans        &kp END          &trans
                                 &trans  &trans  &trans          &trans
             >;
