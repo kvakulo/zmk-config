@@ -219,10 +219,10 @@
 
         symbol_1_layer {
             bindings = <
-&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR     &trans     &trans     &kp NUBS    &kp UNDER   &kp MINUS  &trans
-&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT  &kp ASTRK  &kp FSLH    &kp CARET   &kp AMPS   &kp PIPE
-&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans     &trans     &kp RA(N7)  &kp RA(N8)  &tilde     &sk RIGHT_ALT
-                                     &skq LSHIFT  &kp LGUI   &sl 2      &trans
+&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR       &trans     &trans     &kp NUBS    &kp UNDER   &kp MINUS  &trans
+&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp BACKSLASH  &kp PRCNT  &kp ASTRK  &kp FSLH    &kp CARET   &kp AMPS   &kp PIPE
+&sk LALT  &trans         &kp LS(N3)  &kp DOT        &trans     &trans     &kp RA(N7)  &kp RA(N8)  &tilde     &sk RIGHT_ALT
+                                     &skq LSHIFT    &kp LGUI   &sl 2      &trans
             >;
 
             label = "Symbol 1";
