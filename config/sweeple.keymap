@@ -205,6 +205,9 @@
         combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <10 19>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
         };
     };
 
