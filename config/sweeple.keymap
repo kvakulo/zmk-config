@@ -91,27 +91,21 @@
             label = "macro_tilde";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(RBKT) &kp RA(RBKT)>;
+            bindings = <&kp RA(RBKT) &kp SPACE>;
         };
 
         btick: btick {
             label = "macro_btick";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp N9 &kp N6>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
+            bindings = <&kp PLUS &kp SPACE>;
         };
 
         hat: hat {
             label = "macro_hat";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RBRC &kp RBRC>;
+            bindings = <&kp RBRC &kp SPACE>;
         };
 
         copy: copy {
@@ -208,9 +202,9 @@
 
         symbol_1_layer {
             bindings = <
-&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR       &trans     &trans     &kp NUBS    &kp UNDER   &kp MINUS              &trans
-&kp PLUS  &kp RA(EQUAL)  &kp LS(N2)  &kp BACKSLASH  &kp PRCNT  &kp ASTRK  &kp FSLH    &kp CARET   &kp AMPS               &kp PIPE
-&sk LALT  &trans         &kp LS(N3)  &kp DOT        &trans     &trans     &kp RA(N7)  &kp RA(N8)  &kp RA(RIGHT_BRACKET)  &sk RIGHT_ALT
+&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR       &trans     &trans     &kp NUBS    &kp UNDER   &kp MINUS  &trans
+&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp BACKSLASH  &kp PRCNT  &kp ASTRK  &kp FSLH    &kp CARET   &kp AMPS   &kp PIPE
+&sk LALT  &trans         &kp LS(N3)  &kp DOT        &trans     &trans     &kp RA(N7)  &kp RA(N8)  &tilde     &sk RIGHT_ALT
                                      &skq LSHIFT    &kp LGUI   &sl 2      &trans
             >;
 
