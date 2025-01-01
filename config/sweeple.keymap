@@ -194,7 +194,7 @@
 &kp Q             &kp W            &kp E              &kp R                &kp T      &kp Y     &kp U                 &kp I               &kp O            &kp P
 &hml RIGHT_ALT A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LEFT_CONTROL F  &kp G      &kp H     &hmr RIGHT_CONTROL J  &hmr RIGHT_SHIFT K  &hmr LEFT_ALT L  &hmr RIGHT_ALT BACKSPACE
 &kp Z             &kp X            &kp C              &kp V                &kp B      &kp N     &kp M                 &kp COMMA           &kp DOT          &kp ENTER
-                                                      &lt 5 SPACE          &lt 4 TAB  &htl 3 1  &none
+                                                      &lt 5 SPACE          &lt 4 TAB  &htl 3 1  &mo 6
             >;
 
             label = "Default";
@@ -253,6 +253,15 @@
             >;
 
             label = "Function";
+        };
+
+        coding_layer {
+            bindings = <
+&trans  &kp RA(N8)    &kp RA(N8)    &kp RA(N9)            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp ASTERISK  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(N7)    &kp RA(N7)    &kp RA(N0)            &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans                &trans  &trans  &trans
+            >;
         };
     };
 };
