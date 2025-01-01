@@ -98,7 +98,13 @@
             label = "macro_btick";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PLUS &kp PLUS>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N9 &kp N6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
         };
 
         hat: hat {
