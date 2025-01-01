@@ -209,6 +209,14 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+
+        combo_capsword {
+            bindings = <&caps_word>;
+            key-positions = <20 29>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <200>;
+            layers = <0>;
+        };
     };
 
     keymap {
