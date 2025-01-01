@@ -122,20 +122,6 @@
             bindings = <&kp LC(V)>;
         };
 
-        ccirc: ccirc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N9>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "CCIRC";
-        };
-
         /**
         * Temporarily switches to a layer (`&mo`) while a modifier is held.
         * Analogous to QMK's `LM()`, using a parameterized macro.
@@ -147,25 +133,6 @@
         * Example:
         *  `&lm NUM_LAYER LSHIFT`
         */
-
-        lm: lm {
-            compatible = "zmk,behavior-macro-two-param";
-            wait-ms = <0>;
-            tap-ms = <0>;
-            #binding-cells = <2>;
-            bindings =
-                <&macro_param_1to1>,
-                <&macro_press>,
-                <&mo MACRO_PLACEHOLDER &macro_param_2to1>,
-                <&macro_press>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_param_2to1>,
-                <&macro_release>,
-                <&kp MACRO_PLACEHOLDER &macro_param_1to1>,
-                <&macro_release>,
-                <&mo MACRO_PLACEHOLDER>;
-        };
     };
 
     combos {
@@ -235,9 +202,9 @@
 
         symbol_1_layer {
             bindings = <
-&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR       &trans     &trans     &kp NUBS    &kp UNDER   &kp MINUS  &trans
-&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp BACKSLASH  &kp PRCNT  &kp ASTRK  &kp FSLH    &kp CARET   &kp AMPS   &kp PIPE
-&sk LALT  &trans         &kp LS(N3)  &kp DOT        &trans     &trans     &kp RA(N7)  &kp RA(N8)  &tilde     &sk RIGHT_ALT
+&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR       &trans     &trans     &kp NUBS    &kp UNDER   &kp MINUS              &trans
+&kp PLUS  &kp RA(EQUAL)  &kp LS(N2)  &kp BACKSLASH  &kp PRCNT  &kp ASTRK  &kp FSLH    &kp CARET   &kp AMPS               &kp PIPE
+&sk LALT  &trans         &kp LS(N3)  &kp DOT        &trans     &trans     &kp RA(N7)  &kp RA(N8)  &kp RA(RIGHT_BRACKET)  &sk RIGHT_ALT
                                      &skq LSHIFT    &kp LGUI   &sl 2      &trans
             >;
 
@@ -257,10 +224,10 @@
 
         number_navigation_layer {
             bindings = <
-&trans          &kp N1  &kp N2  &kp N3  &trans  &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &kp PRINTSCREEN
-&kp LEFT_SHIFT  &kp N4  &kp N5  &kp N6  &kp N0  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
-&kp LCTRL       &kp N7  &kp N8  &kp N9  &trans  &kp HOME        &trans          &trans        &kp END          &trans
-                                &trans  &trans  &trans          &trans
+&trans  &kp N1  &kp N2  &kp N3  &trans  &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &kp PRINTSCREEN
+&trans  &kp N4  &kp N5  &kp N6  &kp N0  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
+&trans  &kp N7  &kp N8  &kp N9  &trans  &kp HOME        &trans          &trans        &kp END          &trans
+                        &trans  &trans  &trans          &trans
             >;
 
             label = "Number";
