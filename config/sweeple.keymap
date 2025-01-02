@@ -235,10 +235,10 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans     &trans   &trans     &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans         &trans
-&trans  &trans     &kp TAB  &kp ENTER  &trans  &trans      &kp LS(LC(TAB))    &kp LC(TAB)      &none          &kp DEL
-&trans  &kp LC(Z)  &copy    &paste     &trans  &trans      &trans             &trans           &kp LS(LC(I))  &trans
-                            &trans     &trans  &trans      &trans
+&trans  &trans     &trans  &trans  &trans  &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans         &trans
+&trans  &trans     &trans  &trans  &trans  &trans           &trans             &trans           &trans         &kp DEL
+&trans  &kp LC(Z)  &copy   &paste  &trans  &trans           &trans             &trans           &kp LS(LC(I))  &trans
+                           &trans  &trans  &kp LS(LC(TAB))  &kp LC(TAB)
             >;
 
             label = "Shortcut";
@@ -257,9 +257,9 @@
 
         coding_layer {
             bindings = <
-&trans  &kp RA(N8)    &kp RA(N8)    &kp RA(N9)            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp ASTERISK  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(N7)    &kp RA(N7)    &kp RA(N0)            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(N8)    &kp RA(N8)    &kp RA(N9)            &trans  &trans  &kp LS(NUMBER_3)  &trans  &trans  &trans
+&trans  &kp ASTERISK  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans  &trans  &trans            &trans  &trans  &trans
+&trans  &kp RA(N7)    &kp RA(N7)    &kp RA(N0)            &trans  &trans  &trans            &trans  &trans  &trans
                                     &trans                &trans  &trans  &trans
             >;
         };
