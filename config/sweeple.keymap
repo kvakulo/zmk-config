@@ -139,6 +139,20 @@
             label = "BROWSER_BACK";
         };
 
+        browser_forward: browser_forward {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "BROWSER_FORWARD";
+        };
+
         /**
         * Temporarily switches to a layer (`&mo`) while a modifier is held.
         * Analogous to QMK's `LM()`, using a parameterized macro.
@@ -251,9 +265,9 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans     &trans  &trans  &trans  &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans         &trans
-&trans  &trans     &trans  &trans  &trans  &browser_back    &trans             &trans           &kp LA(RIGHT)  &kp DEL
-&trans  &kp LC(Z)  &copy   &paste  &trans  &trans           &trans             &trans           &kp LS(LC(I))  &trans
+&trans  &trans     &trans  &trans  &trans  &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans            &trans
+&trans  &trans     &trans  &trans  &trans  &browser_back    &trans             &trans           &browser_forward  &kp DEL
+&trans  &kp LC(Z)  &copy   &paste  &trans  &trans           &trans             &trans           &kp LS(LC(I))     &trans
                            &trans  &trans  &kp LS(LC(TAB))  &kp LC(TAB)
             >;
 
