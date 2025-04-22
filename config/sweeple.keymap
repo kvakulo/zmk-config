@@ -242,7 +242,7 @@
         };
 
         jk_escape {
-            bindings = <&kp ESC>;
+            bindings = <&hmr LC(LEFT_SHIFT) ESCAPE>;
             key-positions = <16 17>;
             timeout-ms = <30>;
             layers = <0>;
